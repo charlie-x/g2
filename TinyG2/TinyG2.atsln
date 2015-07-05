@@ -12,6 +12,7 @@ Global
 		gShield|ARM = gShield|ARM
 		sbv300|ARM = sbv300|ARM
 		shopbotShield|ARM = shopbotShield|ARM
+		smoothieboard|ARM = smoothieboard|ARM
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.G2v9d|ARM.ActiveCfg = G2v9d|ARM
@@ -30,6 +31,8 @@ Global
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.sbv300|ARM.Build.0 = sbv300|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.shopbotShield|ARM.ActiveCfg = shopbotShield|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.shopbotShield|ARM.Build.0 = shopbotShield|ARM
+		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.smoothieboard|ARM.ActiveCfg = smoothieboard|ARM
+		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.smoothieboard|ARM.Build.0 = smoothieboard|ARM
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

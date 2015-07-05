@@ -186,6 +186,16 @@ ifeq ("$(PLATFORM)","gShield")
 
 endif
 
+ifeq ("$(PLATFORM)","smoothieboard")
+
+	# This is a NXP LPC1768 with a smoothieboard. We'll use the smoothieboard platform, but set defines
+	# for the code to get the pinout right.
+
+	BASE_PLATFORM=smoothieboard
+	DEVICE_DEFINES += MOTATE_BOARD="smooothieboard" SETTINGS_FILE=${SETTINGS_FILE}
+
+endif
+
 ifeq ("$(PLATFORM)","shopbotShield")
 
 	# This is a due with a shopbot shield. We'll use the Due platform, but set defines
@@ -299,6 +309,22 @@ ifeq ("$(BASE_PLATFORM)","due")
 	CMSIS_ROOT = CMSIS
 
 	DEVICE_INCLUDE_DIRS += $(PLATFORM_BASE)/board/due
+
+
+	include $(PLATFORM_BASE).mk
+endif
+
+
+ifeq ("$(BASE_PLATFORM)","smoothieboard")
+	_PLATFORM_FOUND = 1
+	DEVICE_FIRST_LINK_SOURCES += motate/SamTimers.cpp motate/SamUSB.cpp motate/SamPins.cpp
+
+# Set CHIP and export it for GDB to see
+	export CHIP = LPC1738
+	PLATFORM_BASE = platform/atmel_nxp
+	CMSIS_ROOT = CMSIS
+
+	DEVICE_INCLUDE_DIRS += $(PLATFORM_BASE)/board/smoothieboard
 
 
 	include $(PLATFORM_BASE).mk

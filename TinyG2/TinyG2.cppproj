@@ -5,7 +5,7 @@
     <ProjectVersion>6.2</ProjectVersion>
     <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
     <ProjectGuid>{44ea8fec-55d7-4149-8a78-a574fc26bf51}</ProjectGuid>
-    <avrdevice>ATSAM3X8C</avrdevice>
+    <avrdevice>LPC1768</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
     <Language>CPP</Language>
@@ -22,7 +22,8 @@
     <eraseonlaunchrule>1</eraseonlaunchrule>
     <AsfVersion>3.5.0</AsfVersion>
     <avrtoolinterface>SWD</avrtoolinterface>
-    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtool>
+    </avrtool>
     <com_atmel_avrdbg_tool_samice>
       <ToolType>com.atmel.avrdbg.tool.samice</ToolType>
       <ToolName>J-Link</ToolName>
@@ -56,7 +57,7 @@
         <documentation help="" />
         <offline-documentation help="" />
         <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.10.1" />
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.15.0" />
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
@@ -106,78 +107,78 @@
     <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
     <ToolchainSettings>
       <ArmGccCpp>
-        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
-        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
-        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
-        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
-        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
-        <armgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcc.compiler.directories.IncludePaths>
-        <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
-        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
-        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
-        <armgcccpp.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcccpp.compiler.directories.IncludePaths>
-        <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
-        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
-        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
-        <armgcccpp.linker.libraries.Libraries>
-          <ListValues>
-            <Value>libm</Value>
-          </ListValues>
-        </armgcccpp.linker.libraries.Libraries>
-        <armgcccpp.linker.libraries.LibrarySearchPaths>
-          <ListValues>
-            <Value>../cmsis/linkerScripts</Value>
-          </ListValues>
-        </armgcccpp.linker.libraries.LibrarySearchPaths>
-        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
-        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8c_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
-        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
-        <armgcccpp.preprocessingassembler.general.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcccpp.preprocessingassembler.general.IncludePaths>
-        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
-      </ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-T</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
     </ToolchainSettings>
     <BuildTarget>TinyG2.elf COLOR=0 VERBOSE=1 OPTIMIZATION=s MKDIR=gmkdir</BuildTarget>
     <CleanTarget>clean MKDIR=gmkdir</CleanTarget>
@@ -188,78 +189,78 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'gShield' ">
     <ToolchainSettings>
       <ArmGccCpp>
-        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
-        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
-        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
-        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
-        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
-        <armgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcc.compiler.directories.IncludePaths>
-        <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
-        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
-        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
-        <armgcccpp.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcccpp.compiler.directories.IncludePaths>
-        <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
-        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
-        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
-        <armgcccpp.linker.libraries.Libraries>
-          <ListValues>
-            <Value>libm</Value>
-          </ListValues>
-        </armgcccpp.linker.libraries.Libraries>
-        <armgcccpp.linker.libraries.LibrarySearchPaths>
-          <ListValues>
-            <Value>../cmsis/linkerScripts</Value>
-          </ListValues>
-        </armgcccpp.linker.libraries.LibrarySearchPaths>
-        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
-        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8c_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
-        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
-        <armgcccpp.preprocessingassembler.general.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-            <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
-            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
-          </ListValues>
-        </armgcccpp.preprocessingassembler.general.IncludePaths>
-        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
-      </ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-T</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
     </ToolchainSettings>
     <UsesExternalMakeFile>True</UsesExternalMakeFile>
     <BuildTarget>TinyG2.elf COLOR=0 VERBOSE=1 OPTIMIZATION=s PLATFORM=gShield MKDIR=gmkdir</BuildTarget>
@@ -773,6 +774,89 @@
     <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
     <OutputPath>bin\G2v9k\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'smoothieboard' ">
+    <ToolchainSettings>
+      <ArmGccCpp xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\ARMGCC\3.3.1.128\ARMSupportFiles\Device\ATMEL\sam3xa\include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-T</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+      <Value>C:\Program Files\Atmel\Atmel Toolchain\ARM GCC\Native\4.7.2.87\arm-gnu-toolchain\bin\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <BuildTarget>TinyG2.elf COLOR=0 VERBOSE=1 OPTIMIZATION=s PLATFORM=smoothieboard MKDIR=gmkdir</BuildTarget>
+    <CleanTarget>clean PLATFORM=smoothieboard MKDIR=gmkdir</CleanTarget>
+    <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
+    <OutputDirectory />
+    <OutputPath>bin\smoothieboard\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="arduino\Arduino.h">
       <SubType>compile</SubType>
@@ -918,12 +1002,6 @@
     <Compile Include="canonical_machine.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="cmsis\src\startup_sam3xa.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="cmsis\src\system_sam3xa.c">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="config.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -1038,6 +1116,15 @@
     <Compile Include="motate\utility\AvrXPins.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="motate\utility\due\gShield-pinout.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="motate\utility\due\motate_pin_assignments.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="motate\utility\due\shopbotShield-pinout.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="motate\utility\MotateUSBHelpers.h">
       <SubType>compile</SubType>
     </Compile>
@@ -1081,15 +1168,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="plan_zoid.cpp">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="platform\atmel_sam\board\due\gShield-pinout.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="platform\atmel_sam\board\due\motate_pin_assignments.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="platform\atmel_sam\board\due\shopbotShield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="platform\atmel_sam\board\sbv300\motate_pin_assignments.h">
@@ -1461,10 +1539,12 @@
     <Folder Include="arduino" />
     <Folder Include="motate" />
     <Folder Include="motate\utility" />
+    <Folder Include="motate\utility\due\" />
+    <Folder Include="platform\arm_nxp\board" />
     <Folder Include="platform\atmel_sam\board\sbv300" />
+    <Folder Include="platform\arm_nxp" />
     <Folder Include="tests" />
     <Folder Include="platform\atmel_sam\board\" />
-    <Folder Include="platform\atmel_sam\board\due\" />
     <Folder Include="platform\atmel_sam\board\v9_3x8c\" />
     <Folder Include="settings" />
     <Folder Include="platform\arm" />
@@ -1487,6 +1567,9 @@
       <SubType>compile</SubType>
     </None>
     <None Include="motate\keywords.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="platform\atmel_nxp.mk">
       <SubType>compile</SubType>
     </None>
     <None Include="platform\atmel_sam.mk">
